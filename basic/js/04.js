@@ -32,7 +32,16 @@ let count = [1, 2, 3, 4, 5];
 let count2 = { name: "Alice" };
 
 let newUser = $.map(user, function (item) {
-  if (item.city === "서울") {
-    return item;
-  }
+  if (item.city === "서울") return item;
 });
+console.log(newUser);
+
+let c = $.inArray(3, count);
+console.log(c);
+
+let d = $.merge(user, count);
+console.log(d);
+
+// index
+let i = $("#menu1 li").first().index();
+console.log(i);
