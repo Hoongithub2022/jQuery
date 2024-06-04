@@ -16,3 +16,10 @@ $(".btn2").on({
     $(this).next().text("안녕히 가세요");
   },
 });
+
+// 강제 이벤트 발생
+$(".btn1").click();
+$(".btn2").trigger("mouseover");
+
+// 이벤트 제거
+$(".btn2").off("mouseleave");
